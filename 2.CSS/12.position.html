@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Positioning</title>
+        <style>
+            .bluebox{
+                background-color:crimson;
+                color: aqua;
+                width:auto;
+                height:100px;
+                position:fixed;
+                top:30px;
+                left:30px;
+                z-index: 4;
+            }
+            .rgbbox{
+                background-color:rgb(222,224,85);
+                color: aqua;
+                width:auto;
+                padding:16px; 
+                position:relative;
+                top: 20px;
+                left: 20px;
+                z-index:2;
+            }
+            .greenbox{
+                background-color:coral;
+                color: aqua;
+                padding:40px 10px;
+                top: 40px;
+                left:40px;
+                position:relative;
+                z-index:1;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="bluebox">
+        <p>
+            what to do and what not
+        </p>
+        </div>
+        <div class="rgbbox">
+        <p>
+            what to ddsdo <span class="great"> is my choice</span>and what not
+        </p>
+        </div>
+        
+        <div class="greenbox">
+        <p>
+            what to do and what not
+        </p>
+        </div>
+    </body>
+</html>

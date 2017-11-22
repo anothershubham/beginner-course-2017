@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>change html content</title>
+        <style>
+            .bluebox{
+                background-color:crimson;
+                color: aqua;
+            }
+            .rgbbox{
+                background-color:rgb(222,224,85);
+                color: aqua;
+            }
+                
+            .greenbox{
+                background-color:rgba( 233, 62, 62, 0 )
+                color: aqua;
+            }
+            .great{
+                background-color: black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="bluebox" id="fb">
+        <p>
+            what to do and what not
+        </p>
+        </div>
+        <div class="rgbbox" id="2">
+        <p>
+            what to do <span class="great"> is my choice </span>and what not
+        </p>
+        </div>
+    +    
+        <div class="greenbox">
+        <p>
+            what to do and what not
+        </p>
+        </div>
+        
+        <p>
+        Deciding what to do and what not to do
+        </p>
+        <button id="button1"> click me </button>
+        <!-- Comment Box -->
+        <script>
+            document.getElementById("button1").ondblclick=
+            function(){
+                document.getElementById("fb").innerHTML="<p>changed</p>";
+            }
+        </script>
+    </body>
+</html>
